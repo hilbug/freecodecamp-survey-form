@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Bubbler+One&display=swap');
+
+body {
+    font-family: 'Bubbler One', sans-serif;
+}
+
+h1 {
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+.header > p {
+    font-size: 1.5rem;
+}
