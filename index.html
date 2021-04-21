@@ -1,49 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Request Your Perfect Vacation</title>
 </head>
+
 <body>
     <main class="container">
         <!-- HEADER -->
         <header class="row">
             <div class="col-md-12">
-                <div class="header text-center">
-                    <h1 id="title">Request Your Perfect Vacation</h1>
+                <div class="header text-center rounded-border">
+                    <h1 id="title">Request Your Dream Vacation</h1>
                     <p id="description">Tell us about your dream vacation for the perfect itinerary!</p>
                 </div>
             </div>
         </header>
         <!-- FORM -->
-        <form id="survey-form" action="">
-            <!-- field - id="name" -->
-            <!-- label - id="name-label" -->
-            <!-- field - id-"email" -->
-            <!-- label - id-"email-label" -->
-            <!-- field- id="number" -->
-            <!-- label- id="number-label" -->
+        <section class="row">
+            <div class="col-md-12">
+                <form id="survey-form" class="rounded-border fs-2 fw-bolder" action="">
+                    <!-- field - id="name" -->
+                    <!-- label - id="name-label" -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name">
+                    </div>
 
-            <!-- dropdown - id="dropdown" -->
+                    <!-- field - id-"email" -->
+                    <!-- label - id-"email-label" -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control form-control-lg" id="email"
+                            placeholder="Enter your Email">
+                    </div>
 
-            <!-- radio buttons - grouped by "name" attribute -->
+                    <!-- field- id="number" -->
+                    <!-- label- id="number-label" -->
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Length of Stay</label>
+                        <input type="email" class="form-control form-control-lg" id="number"
+                            placeholder="Enter days for your length of stay">
+                    </div>
 
-            <!-- checkboxes - each have "value" attribute -->
+                    <!-- dropdown - id="dropdown" -->
+                    <div class="mb-3">
+                        <label for="dropdown" class="form-label">Select a continent.</label>
+                        <select class="form-select form-select-lg mb-3">
+                            <option selected>Select a continent</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Europe">Europe</option>
+                            <option value="North America">North America</option>
+                            <option value="South America">South America</option>
+                        </select>
+                    </div>
 
-            <!-- textarea - for comments -->
+                    <!-- radio buttons - grouped by "name" attribute -->
+                    <fieldset class="mb-3">
+                        <label class="form-label">Select a vacation locale.</label>
+                        <!-- Beach -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="locale" id="beach">
+                            <label class="form-check-label" for="beach">
+                                Beach
+                            </label>
+                        </div>
+                        <!-- City -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="locale" id="city">
+                            <label class="form-check-label" for="city">
+                                City
+                            </label>
+                        </div>
+                        <!-- Country -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="locale" id="country">
+                            <label class="form-check-label" for="country">
+                                Country
+                            </label>
+                        </div>
+                        <!-- Mountains -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="locale" id="mountains">
+                            <label class="form-check-label" for="mountains">
+                                Mountains
+                            </label>
+                        </div>
+                    </fieldset>
 
-            <!-- button - id="submit" -->
+                    <!-- checkboxes - each have "value" attribute -->
+                    <div class="mb-3">
+                        <label class="form-label">What activities would you like to do? (Check all that apply.)</label>
+                        <div class="row mt-1">
+                            <div class="col-md-6">
+                                <!-- All-Inclusive Resort -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="resort" id="resort">
+                                    <label class="form-check-label" for="resort">
+                                        All-Inclusive Resort
+                                    </label>
+                                </div>
+                                <!-- Beach Activities -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="beach" id="beach">
+                                    <label class="form-check-label" for="beach">
+                                        Beach Activities
+                                    </label>
+                                </div>
+                                <!-- Hiking -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="hiking" id="hiking">
+                                    <label class="form-check-label" for="hiking">
+                                        Hiking
+                                    </label>
+                                </div>
+                                <!-- Museums -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="museums" id="museums">
+                                    <label class="form-check-label" for="museums">
+                                        Museums
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Sightseeing -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="sightseeing"
+                                        id="sightseeing">
+                                    <label class="form-check-label" for="sightseeing">
+                                        Sightseeing
+                                    </label>
+                                </div>
+                                <!-- Shopping -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="shopping" id="shopping">
+                                    <label class="form-check-label" for="shopping">
+                                        Shopping
+                                    </label>
+                                </div>
+                                <!-- Sporting Event -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="sports" id="sports">
+                                    <label class="form-check-label" for="sports">
+                                        Sporting Event
+                                    </label>
+                                </div>
+                                <!-- Taste local cuisine -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="cuisine" id="cuisine">
+                                    <label class="form-check-label" for="cuisine">
+                                        Taste Local Cuisine
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        </form>
+                    <!-- textarea - for comments -->
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Add additional comments about your dream
+                            vacation!</label>
+                        <textarea class="form-control form-control-lg" id="comments" rows="3"
+                            placeholder="Enter your comments here..."></textarea>
+                    </div>
+
+                    <!-- button - id="submit" -->
+                    <button id="submit" type="submit" class="btn btn-dark w-100 btn-lg">Submit</button>
+                </form>
+            </div>
+        </section>
         <!-- FOOTER -->
     </main>
-    
-    <!-- Boostrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
