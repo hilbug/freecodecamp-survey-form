@@ -30,30 +30,31 @@
                     <!-- field - id="name" -->
                     <!-- label - id="name-label" -->
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name">
+                        <label id="name-label" for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name"
+                            required="required">
                     </div>
 
                     <!-- field - id-"email" -->
                     <!-- label - id-"email-label" -->
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
+                        <label id="email-label" for="email" class="form-label">Email</label>
                         <input type="email" class="form-control form-control-lg" id="email"
-                            placeholder="Enter your Email">
+                            placeholder="Enter your Email" required="required">
                     </div>
 
                     <!-- field- id="number" -->
                     <!-- label- id="number-label" -->
                     <div class="mb-3">
-                        <label for="number" class="form-label">Length of Stay</label>
-                        <input type="email" class="form-control form-control-lg" id="number"
+                        <label id="number-label" for="number" class="form-label">Length of Stay</label>
+                        <input type="number" class="form-control form-control-lg" id="number" min="1" max="500"
                             placeholder="Enter days for your length of stay">
                     </div>
 
                     <!-- dropdown - id="dropdown" -->
                     <div class="mb-3">
                         <label for="dropdown" class="form-label">Select a continent.</label>
-                        <select class="form-select form-select-lg mb-3">
+                        <select id="dropdown" class="form-select form-select-lg mb-3">
                             <option selected>Select a continent</option>
                             <option value="Africa">Africa</option>
                             <option value="Antarctica">Antarctica</option>
@@ -70,28 +71,28 @@
                         <label class="form-label">Select a vacation locale.</label>
                         <!-- Beach -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="locale" id="beach">
+                            <input class="form-check-input" type="radio" name="locale" id="beach" value="beach">
                             <label class="form-check-label" for="beach">
                                 Beach
                             </label>
                         </div>
                         <!-- City -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="locale" id="city">
+                            <input class="form-check-input" type="radio" name="locale" id="city" value="city">
                             <label class="form-check-label" for="city">
                                 City
                             </label>
                         </div>
                         <!-- Country -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="locale" id="country">
+                            <input class="form-check-input" type="radio" name="locale" id="country" value="country">
                             <label class="form-check-label" for="country">
                                 Country
                             </label>
                         </div>
                         <!-- Mountains -->
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="locale" id="mountains">
+                            <input class="form-check-input" type="radio" name="locale" id="mountains" value="mountains">
                             <label class="form-check-label" for="mountains">
                                 Mountains
                             </label>
@@ -168,8 +169,8 @@
 
                     <!-- textarea - for comments -->
                     <div class="mb-3">
-                        <label for="comments" class="form-label">Add additional comments about your dream
-                            vacation!</label>
+                        <label for="comments" class="form-label">Anything else we should know about your dream
+                            vacation?</label>
                         <textarea class="form-control form-control-lg" id="comments" rows="3"
                             placeholder="Enter your comments here..."></textarea>
                     </div>

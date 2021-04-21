@@ -7,6 +7,7 @@ body {
     background-position: center center;
     background-repeat: repeat;
     background-size: contain;
+    /* background-color:green; */
 }
 
 .container {
@@ -37,10 +38,15 @@ h1 {
 }
 
 form {
-    background-color: rgba(102, 51, 153, .85);
+    background-color: rgba(102, 51, 153, .9);
     padding: 25px 30px;
     color: seashell;
     text-shadow: 1px 0px 15px seashell, 0 0 2em black;
+}
+
+.form-check-input:checked {
+    background-color: black;
+    border-color: black;
 }
 
 /* 
