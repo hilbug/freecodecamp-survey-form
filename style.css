@@ -2,12 +2,12 @@
 
 body {
     font-family: 'Bubbler One', sans-serif;
-    background-image: url('vacay-pattern.png');
+    background-color:green;
+    background-image: url('https://github.com/hilbug/freecodecamp-survey-form/blob/main/vacay-pattern.png?raw=true');
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;
     background-size: contain;
-    /* background-color:green; */
 }
 
 /* 
